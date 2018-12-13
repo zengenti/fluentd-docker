@@ -6,6 +6,7 @@ USER root
 RUN apt-get update \
     && apt-get -y install \
         ruby-dev \
+        net-tools \
     && apt-get autoclean \
     && gem install \
         fluent-plugin-elasticsearch \
