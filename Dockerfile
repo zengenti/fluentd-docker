@@ -7,6 +7,7 @@ RUN apt-get update \
     && apt-get -y install \
         ruby-dev \
         net-tools \
+        tcpdump \
     && apt-get autoclean \
     && gem install \
         fluent-plugin-elasticsearch \
