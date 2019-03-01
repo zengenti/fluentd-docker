@@ -13,6 +13,7 @@ RUN apt-get update \
     && gem install \
         fluent-plugin-elasticsearch \
         fluent-plugin-record-reformer \
+        fluent-plugin-multi-format-parser\
     && gem sources --clear-all
 
 ADD fluent.conf /fluentd/etc/fluent.conf
