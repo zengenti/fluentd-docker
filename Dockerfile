@@ -12,6 +12,7 @@ RUN apt-get update \
         fluent-plugin-record-reformer \
         fluent-plugin-multi-format-parser \
         fluent-plugin-grok-parser \
+        fluent-plugin-prometheus \
     && gem sources --clear-all
 
 ADD fluent.conf /fluentd/etc/fluent.conf
