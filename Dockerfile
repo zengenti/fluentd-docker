@@ -13,6 +13,7 @@ RUN apt-get update \
         fluent-plugin-multi-format-parser \
         fluent-plugin-grok-parser \
         fluent-plugin-prometheus \
+        fluent-plugin-influxdb \
     && gem sources --clear-all
 
 ADD fluent.conf /fluentd/etc/fluent.conf
